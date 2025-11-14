@@ -4,6 +4,8 @@ Created on Thu Nov 13 07:55:48 2025
 
 @author: asus
 """
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "True"
 
 import torch #pytorch library for tensors
 import torch.nn as nn #artificial neural network layers description
@@ -95,7 +97,7 @@ def train_model(model,train_loader,criterion,optimizer,epochs=10):
         print(f"Epoch {epoch+1}/{epochs},loss:{avg_loss:.3f}")
     #loss graph
     plt.figure()
-    plt.plot(range(1,epochs+1),train_losses,marker="x",linestyle="-",labels="Train Losss")
+    plt.plot(range(1,epochs+1),train_losses,marker="x",linestyle="-",label="Train Losss")
     plt.xlabel("Epochs")
     plt.ylabel("loss")
     plt.title("Training Loss")
@@ -155,4 +157,5 @@ if __name__=="__main__":
 
 
     
+
   

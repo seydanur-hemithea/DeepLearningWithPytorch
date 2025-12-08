@@ -3,7 +3,7 @@
 “This project explores how a small LSTM model learns the rhythm of a melancholy inner monologue.”
 
 
-Project Title: Mushroom Species Classification (using RBFN)
+# 🍄 Mushroom Species Classification (using RBFN)
 ​This project aims to classify mushroom species using a Radial Basis Function Network (RBFN) implemented with PyTorch.
 ​💾 Dataset
 ​The dataset used in this project contains features related to mushroom species found in Bolu, Turkey, sourced from Kaggle.
